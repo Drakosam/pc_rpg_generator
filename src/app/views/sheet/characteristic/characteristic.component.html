@@ -1,0 +1,8 @@
+<div>
+  <ng-container *ngFor="let characteristic of char_sheet.characteristics">
+    <div>
+      <label>{{characteristic.name}}</label>
+      <input [(ngModel)]="characteristic.value" type="number" (change)="updateChar()">
+    </div>
+  </ng-container>
+</div>
